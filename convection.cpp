@@ -19,7 +19,7 @@
     #define INCLUDE_MET
 #endif
 
-int man()
+int main()
 {
     std::vector<double> v, Vel, D, F, P, a;
     std::vector<double> properties,diff;
