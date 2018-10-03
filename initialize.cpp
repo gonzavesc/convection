@@ -35,3 +35,21 @@ void Set_P(std::vector<double>& P,const std::vector<double>& D, const std::vecto
         P.push_back(F[i] / D[i]);
     }
 }
+void Set_Phi(std::vector<std::vector<double>>& phi, const int& Nx, const int& Ny)
+{
+    for(int i = 0; i <= Ny; i++)
+    {
+        phi[i][Nx] = 1.0;
+    }
+}
+
+void Set_Phip(std::vector<std::vector<double>>& phi_p, const std::vector<std::vector<double>>& phi, const int& Nx, const int& Ny)
+{
+    for(int i = 0; i <= Ny; i++)
+    {
+        for (int j = 0; j<= Nx; j++)
+        {
+            phi_p[i][j] = phi[i][j];
+        }
+    }
+}
