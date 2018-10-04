@@ -12,7 +12,7 @@
 
 #ifndef INCLUDE_IN
 	#include "initialize.hpp"
-	#define INCLUDE_In
+	#define INCLUDE_IN
 #endif
 
 void Set_A(double& A, const double& P,const double& Method);

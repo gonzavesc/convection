@@ -13,7 +13,7 @@
 
 #ifndef INCLUDE_IN
 	#include "initialize.hpp"
-	#define INCLUDE_In
+	#define INCLUDE_IN
 #endif
 
 void Set_D(std::vector<double>& D,const std::vector<double>& properties, const std::vector<double>& diff)
