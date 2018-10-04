@@ -24,4 +24,4 @@
     #define INCLUDE_GAUSS
 #endif
 
-void exportarMatriu(const std::vector<std::vector<double>>& phi, const int Nx, const int Ny);
+void exportarMatriu(const std::vector<std::vector<double>>& phi);

@@ -29,18 +29,18 @@
     #define INCLUDE_EXP
 #endif
 
-void exportarMatriu(const std::vector<std::vector<double>>& phi, const int Nx, const int Ny)
+void exportarMatriu(const std::vector<std::vector<double>>& phi)
 {
     int i, jj;
     std::ofstream output;
     output.open("Matrix.dat");
-    for (i = 0; i <= Ny; i++)
+    for (i = 0; i <= test::Ny; i++)
     {
-        for (jj = 0; jj <= Nx - 1; jj++)
+        for (jj = 0; jj <= test::Nx - 1; jj++)
         {
              output << phi[i][jj] << ", " ;
         }
-        output << phi[i][Nx] << std::endl;
+        output << phi[i][test::Nx] << std::endl;
     }
     output.close();
 }

@@ -19,4 +19,4 @@
     #define INCLUDE_MET
 #endif
 
-void Gauss_seidel(std::vector<std::vector<double>>& phi,const  std::vector<double>& a, const int& Nx, const int& Ny);
+void Gauss_seidel(std::vector<std::vector<double>>& phi,const  std::vector<double>& a);
