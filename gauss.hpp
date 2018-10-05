@@ -18,5 +18,5 @@
     #include "method.hpp"
     #define INCLUDE_MET
 #endif
-
+extern double err;
 void Gauss_seidel(std::vector<std::vector<double>>& phi,const  std::vector<double>& a);

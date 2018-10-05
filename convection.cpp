@@ -41,7 +41,7 @@ int main()
     std::vector<std::vector<double>> phi(test::Ny + 1, std::vector<double>(test::Nx +1, 0));
     std::vector<std::vector<double>> phi_p(test::Ny + 1, std::vector<double>(test::Nx +1, 0));
     Vel.push_back(v[2]); Vel.push_back(v[3]);
-    Steady = v[10]; Method = v[11];
+    Steady = v[10]; Method = v[11]; err = v[12];
     Set_Phi(phi);
     Set_Phip(phi_p,phi);
     Set_D(D, properties, diff);
