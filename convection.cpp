@@ -48,11 +48,6 @@ int main()
     Set_F(F, properties, diff, Vel);
     Set_P(P, D, F);
     Set_a(a, D, F, P, properties, diff, Steady, Method);
-    for (int i = -100; i <= 100; i++)
-    {
-        K = i * 0.1;
-        Set_A(A, K, M);
-    }
     if (Steady == 0){
 
     }
