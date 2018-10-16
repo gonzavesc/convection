@@ -33,6 +33,7 @@ void exportarMatriu(const std::vector<std::vector<double>>& phi)
 {
     int i, jj;
     std::ofstream output;
+    output.precision(17);
     output.open("Matrix.dat");
     for (i = 0; i <= test::Ny; i++)
     {
@@ -40,7 +41,7 @@ void exportarMatriu(const std::vector<std::vector<double>>& phi)
         {
              output << phi[i][jj] << ", " ;
         }
-        output << phi[i][test::Nx] << std::endl;
+        output << std::scientific << phi[i][test::Nx] << std::endl;
     }
     output.close();
 }
