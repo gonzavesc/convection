@@ -1,7 +1,7 @@
 rho 1000
 gamma 2
-Vx 0
-Vy 1
+Vx 1
+Vy 0
 Lx 1
 Ly 1
 dx 0.01
@@ -9,5 +9,5 @@ dy 0.01
 dt 1
 runtime 10000
 steady 1
-method 1
+method 4
 error 1e-9

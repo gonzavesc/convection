@@ -25,18 +25,22 @@ void Set_A(double& A, const double& P,const double& Method)
     if (Method == 0) //central difference
     {
         A = 1 - 0.5 * std::abs(P);
+
     }
     if (Method == 1) //Upwind
     {
         A = 1;
+
     }
     if (Method == 2) //hybrid
     {
         A = std::max(0.0, 1 - 0.5 * std::abs(P));
+
     }
     if (Method == 3) //Power Law
     {
-        A = std::max(0.0, std::pow(1 - 0.5 * std::abs(P), 5));
+        A = std::max(0.0, std::pow(1 - 0.1 * std::abs(P), 5));
+
     }
     if (Method == 4) //Exponential
     {
@@ -45,7 +49,7 @@ void Set_A(double& A, const double& P,const double& Method)
         {
             A=1;
         }
-        std::cout << A << std::endl;
+
     }
 }
 void Set_a(std::vector<double>& a, const std::vector<double>& D, const std::vector<double>& F, const std::vector<double>& P,const std::vector<double>& properties, const std::vector<double>& diff, const double Steady, const double Method)
